@@ -6,7 +6,7 @@ import numpy as np
 import xgboost as xgb
 
 # 加载 XGBoost 模型（.pkl 格式）
-with open('C:/Users/yy06a/model双结局/xgb_full.pkl', 'rb') as f:
+with open('xgb_full.pkl', 'rb') as f:
     xgb_full = pickle.load(f)  # 加载 pkl 模型
 
 # 设置页面标题
@@ -105,3 +105,4 @@ if st.button('Predict'):
 
     except Exception as e:
         st.write(f'预测时出错: {e}')
+
